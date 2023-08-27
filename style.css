@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar{
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0,.5);
+    background:  black;
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(8, 168, 56);
+}
+#navbarSupportedContent a{
+    color: white;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 3px solid rgb(8, 168, 56);
+}
+#navbarSupportedContent button{
+    --b: 3px;   /* border thickness */
+    --s: .45em; /* size of the corner */
+    --color:  rgb(8, 168, 56);
+    
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #e90f0f00;
+    outline-offset: .6em;
+    font-size: 16px;
+  
+    border: 0;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+#navbarSupportedContent button:hover,
+#navbarsupportedcontent button:focus-visible{
+    --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+
+}
+#navbarsupportedcontent button:active {
+    background: var(--color);
+    color: #fff;
+  }
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*****Home*****/
+
+#Home{
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.4)), url(bg.jfif);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+#Home h1{
+    font-size: 100px;
+    color: white;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#Home p{
+    font-size: 18px;
+    color: white;
+}
+
+#Home  input{
+    border-radius: 23px;
+
+}
+#Home button{
+   
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color:bla;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#Home button:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+/********About*******/
+
+#About{
+    background: linear-gradient(rgb(4, 123, 4),rgb(13, 171, 26),rgb(108, 250, 108)
+    );
+}
+#About h1{
+    font-weight: 800;
+    font-size: 50px;
+    color: white;
+}
+/*******Product******/
+
+#Product{
+    background: linear-gradient(rgb(241, 151, 48),rgb(255, 180, 94),rgb(235, 181, 119));
+} 
+#Product h1{
+    font-size: 55px;
+    color: whitesmoke;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 2px;
+    
+}
+#Product img{
+    width: 200px;
+    height: 200px;
+}
+.card{
+    width: 250px;
+    height: 250px;
+    background: #e5e5e5 !important;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgb(0, 0, 0,.8);
+    border-radius: 20px !important;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px;
+}
+.card:hover{
+     box-shadow: inset 5px 5px 10px rgba(0,0,0,.3);
+                 inset: -4px -4px 10px white;
+    transition: .2s;
+}
+#Contact img{
+    height: 99%;
+    border-radius: 12px;
+}
+.box{
+    width: 80% !important;
+    background: red;
+    margin-top: 10px;
+   
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+#Contact button{
+    appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+#Contact button:hover{
+    background-color: #FFC229;
+  box-shadow: #FF6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+#Contact button active {
+    transform: scale(1.025);
+  }
+  @media (min-width: 768px) {
+#Contact button {
+      font-size: 1.5rem;
+      padding: .75rem 2rem;
+      margin: 10px 0px;
+    }
+  }
+  #Contact{
+    letter-spacing: 2px;
+    font-family:'Dancing Script', cursive;;
+    background: linear-gradient(rgb(99, 100, 101),rgb(227, 233, 234),rgb(171, 222, 234));
+    font-size: 25px;
+    color: green;
+
+    
+  }
+  #Contact input{
+    margin: 10px 0px;
+    border-radius: 12px;
+  }
+  
+  }
+  #Contact textarea{
+    margin: 10px 0px;
+    border-radius: 12px;
+  }
+
+footer{
+  width: 100%;
+  height: 30px;
+  background: black;
+  color: white;
+  text-align: center;
+}
